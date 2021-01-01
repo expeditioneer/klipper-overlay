@@ -8,7 +8,7 @@
 
 This repo provides necessary ebuilds to set up the 3D printer firmware with [Klipper](https://www.klipper3d.org/), [Moonraker](https://github.com/Arksine/moonraker) and [Fluidd](https://github.com/cadriel/fluidd).
 
-##List of ebuilds
+## List of ebuilds
 * ** app-misc/klipper (9999)
 * ** app-misc/moonraker (0.2.7)
 * ** www-apps/fluidd ( 1.4.1 )
