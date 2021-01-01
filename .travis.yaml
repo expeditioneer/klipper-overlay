@@ -1,0 +1,37 @@
+---
+
+dist: bionic
+
+language: python
+
+python:
+  - pypy3
+
+git:
+  depth: 1
+  quiet: true
+
+env:
+  global:
+    - PORTAGE_ROOT="$(mktemp --directory)"
+    - PORTAGE_VERSION="$(.travis-scripts/get_latest_portage_version)"
+    - PORTAGE_CONFIGROOT="${PORTAGE_ROOT}"
+    - PATH="${PORTAGE_ROOT}/usr/bin:${PATH}"
+
+install:
+  - .travis-scripts/install_portage
+  - .travis-scripts/setup_portage
+  - .travis-scripts/add_required_user_and_group
+
+before_script:
+  - pip install PyYAML
+
+script:
+  - repoman full --include-dev
+
+after_success:
+  - bash <(curl --silent https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
+
+notifications:
+  email:
+    on_failure: change

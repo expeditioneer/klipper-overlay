@@ -1,0 +1,3 @@
+[submodule ".travis-scripts"]
+	path = .travis-scripts
+	url = git@github.com:expeditioneer/gentoo-travis-scripts.git
