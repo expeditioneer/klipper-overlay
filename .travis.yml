@@ -1,5 +1,3 @@
----
-
 dist: bionic
 
 language: python
@@ -13,6 +11,7 @@ git:
 
 env:
   global:
+    - secure: MPfq4nl/ATVmZ7D6tHd4HJQdnqdnKgyRor7r35D291Exq1F7cL0yGmYunl/xSQpZvvEN1YV1rGki4qVVTP5YX36B1LcDWba8EJkL9cE4OTmCSjmkmuogKRKtmcdmd4qTfUxcDVHhd8wCUYWmohDuH6N9qklOqdOkudCXRE7yz5rAfSBDo1+hM1pQFGTGM4clso40iICYizpsxjtn186v5n4VupZ9fFutENBc4h9kF1wUPDZwZj/OucWCKiR3vBFeAdJmodMfJikoV2s0f38gkpQ1odXO8k7pCBabcPe9GQxvBVbDLWxtP/H9rFeUQ7nmw/r8BvibgTrmXBgM7SB34VOiT/JI5+rzfNstAlRGTWlxyD6OzJcbeoxsYB8EX0z41lkkj7NrG2Zgf2Vrbk0gesxONQ08JKZj8DcX3PSmlTZvcj835GGuyv1t3dH5RN8Byq5ko1b7OUMKz6q5rKc3wd/eainhTtGpgbifdpVJXasjEN7frtrwE+wBJ8dxu3UtSvkOYUkHUR+XEg2KRBzw6yfJrI3MLtA8YeCqQOkOZeBCv6ypYETXZs48Rk5S41pWqVNZ1S3sucEhNm+a1Z8vElWGtw801nnUVqLIplKdsG3hsNtfx5iP62lLtFl6HDOFOAjjB+rXJWp8aq9XntbsJ3sxRhvVOqXA2VKhBCN0+uk=
     - PORTAGE_ROOT="$(mktemp --directory)"
     - PORTAGE_VERSION="$(.travis-scripts/get_latest_portage_version)"
     - PORTAGE_CONFIGROOT="${PORTAGE_ROOT}"
