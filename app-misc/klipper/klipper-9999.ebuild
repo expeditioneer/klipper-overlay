@@ -77,7 +77,7 @@ src_install() {
 	dodir /var/log/klipper
 	keepdir /var/log/klipper
 
-	fowners -R dennis:dennis /opt/klipper /var/spool/klipper/ /etc/klipper /var/log/klipper
+	fowners -R klipper:klipper /opt/klipper /var/spool/klipper/ /etc/klipper /var/log/klipper
 
 	doenvd "${FILESDIR}/99klipper"
 }
