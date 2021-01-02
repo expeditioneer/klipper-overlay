@@ -1,4 +1,4 @@
-dist: bionic
+dist: focal
 
 language: python
 
@@ -11,11 +11,12 @@ git:
 
 env:
   global:
-    - secure: a1vN+StnWgGSB63Vd9qoxyiqMnFSTKqYl3sBWNRCAnNi3VdR3+DdJE4jBVcoy6t82/jCnaSL3Ye1nq+t6+y0z1KifJmtqhmnP1z9MrWfKQKFwzeGKfKp4XHPcyf3x6BOPG0an/BaI/e7LjpEHIR5xD3cNuwrxVoZng4kAGLZ+RHoLge6sqxuRT6BRRxRINYSZHZEl9d5zvEKRkJhOJW3AQJ2Thj+7cnx0HpDgAc49tQVuZHHPGh3SOmZymLjhtatTO1SsqxIqxbJ7ETO+OjwghgZL7dwSR8igeKnDey5KN8op/6v3C6zax7VG+FMUqS+ojGtiDu3x0dHjiuypNpqCGaEAtrAjOp4xG0c4tY4BuYdk1CgzCRlHFSBXJ2Mx8Bv0poQuLv5Be077BsQBalyqRIcDaFluhHdvccKxpBYFOmTDCQojTvqUHf56CNCGOdp95++Gn3+SMXjNYMifHEcW/gmapjgd002lSnTk2xNv2smmGaJZsYIM1hG1zKgZwaUFuhy3JJgYiDsMDxTQ9kmB01oRs3A1lWoCf85BYGGHDIEuI6m6Rv6DfqX9U6yzBJxVmOkfcSLxZfq9vcXT8out3Bbjx1CljJnyc62WjFawOORGdeyIpr6S+ENorm/ARraU8e+08IxSBy6QNC6R2DOmuqxbGYCI9TVFhwIq8cR/WU=
+    - secure: pJ5UhxwkiBZgk/PAG/DXdZeXdcXfCBAKJK13hKG+DNSFYPEnNZ7tNKuJ47cBYhFzCAFL3qdlVi9Pn56AqzXjBCmRisxUM0RI+seGCedZn/d6JbhR/QXi22EEojQ2MzELt3njo75ihzzWb1VLoZvAmVwJ/E1OEHZuyfJqBixPi3YFcrBC4IBX3PF6pZKQDTgBxRyH1ApmBM1D9ctcOZ8XqZYL4P9/bljWFD5SP5K5UfyRtsQjJATScuWvljbc10OW5f5boFvEu9SjkaEUEubLEypkPGBrtscacJRJWKlQzR0PqvgKtlVDNb4sksPOPQVX9cmwFMyg39Gi5JrD1O+yEA1a2AfUF8rmgIc7Xb8b/9OVZuDsiDX0JBTESCId0FWLrbK63pkJYhK5uEbADw1561mQEzLUVu4IsUJsqE6giDeJ8y52Oh1pcQH6fTS2Omt6NIBGuSX+Wxh+MrQ4dNvCKt0rVDAI7PslSNNSihEjF0ra4oIgWn19i2wyr8taq6Wvi7YATUjXIpLaXjBJGWsrOMSNufemCYNG/BHNmE8m7JJsCSmG1Jn9atF4lx7A5PXDW3A1czYa9vCv0AgxgmTznUM0/5YuK3IVoWoWhAeRlxLj/fYKgxO4fdaUKIyf84Vcr+QhyYBEScoIfVNt9YbyLQ9V/EOu71OdtKBtj6+o4NA=
     - PORTAGE_ROOT="$(mktemp --directory)"
     - PORTAGE_VERSION="$(.travis-scripts/get_latest_portage_version)"
     - PORTAGE_CONFIGROOT="${PORTAGE_ROOT}"
     - PATH="${PORTAGE_ROOT}/usr/bin:${PATH}"
+
 install:
   - .travis-scripts/install_portage
   - .travis-scripts/setup_portage
