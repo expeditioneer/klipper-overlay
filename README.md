@@ -1,4 +1,4 @@
-# klipper Gentoo overlay 
+# klipper gentoo overlay 
 
 [![Build Status](https://travis-ci.com/expeditioneer/klipper-overlay.svg?branch=master)](https://travis-ci.com/expeditioneer/klipper-overlay)
 [![Black Duck Security Risk](https://copilot.blackducksoftware.com/github/repos/expeditioneer/klipper-overlay/branches/master/badge-risk.svg)](https://copilot.blackducksoftware.com/github/repos/expeditioneer/klipper-overlay/branches/master)
@@ -10,7 +10,7 @@ This repo provides necessary ebuilds to set up the 3D printer firmware with [Kli
 
 ## List of ebuilds
 * ** app-misc/klipper (9999)
-* ** app-misc/moonraker (0.2.7)
+* ** app-misc/moonraker (0.2.8)
 * ** www-apps/fluidd ( 1.4.1 )
 
 Feel free to contribute!
