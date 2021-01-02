@@ -11,12 +11,11 @@ git:
 
 env:
   global:
-    - secure: NGfoIBZGZj1SBQBhfukXGpV8DJKlbMBsT3pq7dS2TJIp+GzLljAtlARxlN4Y/1QqYvHipBlzQdlvQLgUudIz1ZF0Isn0Orj+jyvFfC1eSeO4wu8KcetW9PqkQdj2HwUQW9lM+Bhi4dl0iY6/j/xgiFoy/CpXLFcwaqgPzIzntRY9HMHlKJvCoHfuOr9YpCU4j+WGLR3lPKdjrDyvjTYc1qXEZHc/uh7SkGTthLrlBSjcV3riakdqQleGSfQw33rd+ymULrUEMa8PHp2HbXSZtYBo88JDMpp8dE4T7PKeKJRQE78awsRhXENEi898COsQ72nnBoBtHn7Y8d6nqr3j1gSGcmjfW/ZhRxRC2BDKsGY0QcrjuoAGzhWuYjvoyFbWZmMajDtzFqv0yRsW6S8sonL9cH13/hjzgIhd0DzvEwH/U+mp61KXNMA/cps7CruEmNGDjc/p4DJ6GfRWTKgL6f6Y7+pp0BKQk7DQjx5DJ5xahnWP2Pql2oHqpG5Q+MhGdyVpBZlfp8yc2xn9Vt80r2uQ069Nt1uWcS8Rtr1ZUbJmMbkZ36jwBp0YNURXYHYXwnMCvH/gQ0BrTq5RPuPYMe04U+vjB1mBhUKaiz7puRYIOU6k/Cul05PkjYXY9yaHAuK+0DqBDNGzetsAXqPF3x8bqx+0TTxxGQn6h6FZpTU=
+    - secure: a1vN+StnWgGSB63Vd9qoxyiqMnFSTKqYl3sBWNRCAnNi3VdR3+DdJE4jBVcoy6t82/jCnaSL3Ye1nq+t6+y0z1KifJmtqhmnP1z9MrWfKQKFwzeGKfKp4XHPcyf3x6BOPG0an/BaI/e7LjpEHIR5xD3cNuwrxVoZng4kAGLZ+RHoLge6sqxuRT6BRRxRINYSZHZEl9d5zvEKRkJhOJW3AQJ2Thj+7cnx0HpDgAc49tQVuZHHPGh3SOmZymLjhtatTO1SsqxIqxbJ7ETO+OjwghgZL7dwSR8igeKnDey5KN8op/6v3C6zax7VG+FMUqS+ojGtiDu3x0dHjiuypNpqCGaEAtrAjOp4xG0c4tY4BuYdk1CgzCRlHFSBXJ2Mx8Bv0poQuLv5Be077BsQBalyqRIcDaFluhHdvccKxpBYFOmTDCQojTvqUHf56CNCGOdp95++Gn3+SMXjNYMifHEcW/gmapjgd002lSnTk2xNv2smmGaJZsYIM1hG1zKgZwaUFuhy3JJgYiDsMDxTQ9kmB01oRs3A1lWoCf85BYGGHDIEuI6m6Rv6DfqX9U6yzBJxVmOkfcSLxZfq9vcXT8out3Bbjx1CljJnyc62WjFawOORGdeyIpr6S+ENorm/ARraU8e+08IxSBy6QNC6R2DOmuqxbGYCI9TVFhwIq8cR/WU=
     - PORTAGE_ROOT="$(mktemp --directory)"
     - PORTAGE_VERSION="$(.travis-scripts/get_latest_portage_version)"
     - PORTAGE_CONFIGROOT="${PORTAGE_ROOT}"
     - PATH="${PORTAGE_ROOT}/usr/bin:${PATH}"
-
 install:
   - .travis-scripts/install_portage
   - .travis-scripts/setup_portage
