@@ -1,7 +1,7 @@
 # klipper gentoo overlay 
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b12c45e5145a41a8961ae7092db7e349)](https://app.codacy.com/gh/expeditioneer/klipper-overlay?utm_source=github.com&utm_medium=referral&utm_content=expeditioneer/klipper-overlay&utm_campaign=Badge_Grade)
 [![Build Status](https://travis-ci.com/expeditioneer/klipper-overlay.svg?branch=master)](https://travis-ci.com/expeditioneer/klipper-overlay)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b12c45e5145a41a8961ae7092db7e349)](https://app.codacy.com/gh/expeditioneer/klipper-overlay?utm_source=github.com&utm_medium=referral&utm_content=expeditioneer/klipper-overlay&utm_campaign=Badge_Grade)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/expeditioneer/klipper-overlay/graphs/commit-activity)
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
