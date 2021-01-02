@@ -1,8 +1,6 @@
 # klipper gentoo overlay 
 
 [![Build Status](https://travis-ci.com/expeditioneer/klipper-overlay.svg?branch=master)](https://travis-ci.com/expeditioneer/klipper-overlay)
-[![Black Duck Security Risk](https://copilot.blackducksoftware.com/github/repos/expeditioneer/klipper-overlay/branches/master/badge-risk.svg)](https://copilot.blackducksoftware.com/github/repos/expeditioneer/klipper-overlay/branches/master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/426681dd10d14fa7ac671af4e0d826d9)](https://www.codacy.com/manual/expeditioneer/klipper-overlay?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=expeditioneer/klipper-overlay&amp;utm_campaign=Badge_Grade)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/expeditioneer/klipper-overlay/graphs/commit-activity)
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
