@@ -32,7 +32,7 @@ src_install() {
 	dosym ../../../etc/klipper/config.json /var/www/${PN}/config.json
 
 	insinto /etc/nginx/conf.d
-	doins "${FILESDIR}"/fluidd.conf "${FILESDIR}"/upstreams.conf
+	doins "${FILESDIR}"/fluidd.conf "${FILESDIR}"/upstreams.conf "${FILESDIR}"/common_vars.conf
 
 }
 
