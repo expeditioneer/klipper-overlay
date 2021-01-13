@@ -29,6 +29,12 @@ RDEPEND="${DEPEND}
 
 DOCS=( LICENSE docs/api_changes.md )
 
+src_prepare() {
+	sed -i -e 's|^DEFAULT_KLIPPY_LOG_PATH.*|DEFAULT_KLIPPY_LOG_PATH = "/var/log/klipper/klipper.log"|g' moonraker/app.py || die
+
+	default
+}
+
 src_install() {
 	if use doc; then
 		dodoc -r ${DOCS[@]} docs/api_changes.md docs/configuration.md docs/dev_changelog.md docs/plugins.md docs/printer_objects.md docs/user_changes.md docs/web_api.md
@@ -51,9 +57,9 @@ src_install() {
 pkg_postinst() {
 	echo
 	elog "Moonraker depends on the following configuration items in the printer.cfg of klipper for full functionality:"
-	elog "    [virtual_sdcard]"
-	elog "    [pause_resume]"
 	elog "    [display_status]"
+	elog "    [pause_resume]"
+	elog "    [virtual_sdcard]"
 	echo
-	elog "Provide an API Key at /etc/klipper/api_key"
+	elog "Provide an API Key at /etc/klipper/api_key with owner and group klipper and permissions 0640"
 }
