@@ -25,7 +25,7 @@ RDEPEND="${DEPEND}
 	$(python_gen_cond_dep '
 		>=dev-python/pillow-8.0.1[${PYTHON_USEDEP}]
 		>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
-		>=www-servers/tornado-6.0.4[${PYTHON_USEDEP}]')"
+		>=www-servers/tornado-6.1.0[${PYTHON_USEDEP}]')"
 
 DOCS=( LICENSE docs/api_changes.md )
 
