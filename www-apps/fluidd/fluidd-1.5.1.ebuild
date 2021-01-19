@@ -3,8 +3,6 @@
 
 EAPI=7
 
-#inherit webapp
-
 HOMEPAGE="https://github.com/cadriel/fluidd"
 DESCRIPTION="A free and open-source Klipper web interface for managing your 3d printer."
 SRC_URI="https://github.com/cadriel/fluidd/releases/download/v${PV}/${PN}.zip -> ${P}.zip"
