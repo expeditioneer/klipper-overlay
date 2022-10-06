@@ -31,6 +31,6 @@
 	</use>
 	<upstream>
 		<bugs-to>https://github.com/jacksonliam/mjpg-streamer/issues</bugs-to>
-		<remote-id type="github">mjpg-streamer-experimental</remote-id>
+		<remote-id type="github">jacksonliam/mjpg-streamer</remote-id>
 	</upstream>
 </pkgmetadata>

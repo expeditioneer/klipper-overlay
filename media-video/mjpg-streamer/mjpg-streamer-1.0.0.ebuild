@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 
 INPUT_PLUGINS=( input-file input-http input-opencv input-ptp2 +input-raspicam input-uvc )
-OUTPUT_PLUGINS=( output-file +output-http output_rtsp output-udp output-viewer output-zmqserver )
+OUTPUT_PLUGINS=( output-file +output-http output-rtsp output-udp output-viewer output-zmqserver )
 
 IUSE="${INPUT_PLUGINS[*]}  ${OUTPUT_PLUGINS[*]} +www http-management wxp-compat"
 
@@ -23,7 +23,7 @@ REQUIRED_USE="
 	|| ( ${OUTPUT_PLUGINS[*]//+} )"
 
 RDEPEND="
-	virtual/jpeg
+	media-libs/libjpeg-turbo
 	input-ptp2? ( media-libs/libgphoto2 )
 	input-raspicam? (	|| ( media-libs/raspberrypi-userland media-libs/raspberrypi-userland-bin ) )
 	input-uvc? ( media-libs/libv4l acct-group/video )
