@@ -1,8 +1,8 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
-PYTHON_COMPAT=( python3_{8,9} )
+EAPI=8
+PYTHON_COMPAT=( python3_{9..11} )
 
 inherit python-single-r1 systemd
 
@@ -12,8 +12,9 @@ SRC_URI="https://github.com/Arksine/moonraker/archive/v${PV}.tar.gz -> ${P}.tar.
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86"
+KEYWORDS=""
 IUSE="doc"
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 DEPEND="
 	acct-group/klipper
@@ -25,7 +26,7 @@ RDEPEND="${DEPEND}
 	$(python_gen_cond_dep '
 		>=dev-python/pillow-8.0.1[${PYTHON_USEDEP}]
 		>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
-		>=www-servers/tornado-6.1[${PYTHON_USEDEP}]')"
+		>=dev-python/tornado-6.2[${PYTHON_USEDEP}]')"
 
 DOCS=( LICENSE docs/api_changes.md )
 
@@ -42,11 +43,11 @@ src_install() {
 
 	diropts -o klipper -g klipper
 	insopts -o klipper -g klipper
-	dodir "/opt/${PN}"
 	insinto "/opt/${PN}"
+	dodir "/opt/${PN}"
 	doins -r moonraker
-	dodir "/opt/${PN}/scripts"
 	insinto "/opt/${PN}/scripts"
+	dodir "/opt/${PN}/scripts"
 	doins scripts/extract_metadata.py "${FILESDIR}/update_manager.conf"
 
 	python_fix_shebang "${D}/opt/moonraker/moonraker/moonraker.py" || die
