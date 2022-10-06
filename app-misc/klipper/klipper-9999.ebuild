@@ -9,7 +9,6 @@ inherit git-r3 python-single-r1 systemd
 DESCRIPTION="Klipper is a 3d-Printer firmware"
 HOMEPAGE="https://www.klipper3d.org/"
 EGIT_REPO_URI="https://github.com/KevinOConnor/klipper.git"
-EGIT_BRANCH="work-python3-20200612"
 
 LICENSE="GPL-3"
 SLOT="0"
