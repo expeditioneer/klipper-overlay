@@ -1,8 +1,8 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
-PYTHON_COMPAT=( python3_{8,9} )
+EAPI=8
+PYTHON_COMPAT=( python3_{9..11} )
 
 inherit git-r3 python-single-r1 systemd
 
@@ -14,6 +14,8 @@ EGIT_BRANCH="work-python3-20200612"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS=""
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
+
 IUSE="doc examples"
 
 DEPEND="
