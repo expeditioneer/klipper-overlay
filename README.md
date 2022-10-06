@@ -1,5 +1,6 @@
 # klipper gentoo overlay 
 
+[![Build Status](https://github.com/expeditioneer/klipper-overlay/actions/workflows/pkgcheck.yml/badge.svg)](https://github.com/expeditioneer/klipper-overlay/actions/workflows/pkgcheck.yml)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/expeditioneer/klipper-overlay/graphs/commit-activity)
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
