@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>expeditioneer@gentoo.org</email>
+		<name>Dennis Lamm</name>
+	</maintainer>
+	<longdescription>
+		MJPG-streamer takes JPGs from Linux-UVC compatible webcams, filesystem or other input plugins and streams them
+		as M-JPEG via HTTP to webbrowsers, VLC and other software. It is the successor of uvc-streamer, a Linux-UVC
+		streaming application with Pan/Tilt.
+	</longdescription>
+	<use>
+		<flag name="input-file">Plugin that watches given directory and send it's content</flag>
+		<flag name="input-http">Plugin that takes http-input</flag>
+		<flag name="input-opencv">Plugin that uses OpenCV to read from supported video sources</flag>
+		<flag name="input-ptp2">Plugin that sends video stream from PTP2 compatible camera</flag>
+		<flag name="input-raspicam">Raspberry Pi camera support via the input_raspicam plugin</flag>
+		<flag name="input-uvc">Plugin that sends video stream from UVC compatible camera</flag>
+		<flag name="output-file">Plugin that saves received content under given location</flag>
+		<flag name="output-http">Small HTTP server plugin which sends WWW directory content and streams image content
+		</flag>
+		<flag name="output-rtsp">Plugin which provides a mechanism to take snapshots with a trigger from a UDP packet
+		</flag>
+		<flag name="output-udp">Plugin receiving content over UDP and storing to a directory</flag>
+		<flag name="output-viewer">Plugin which allows to see output with viewer</flag>
+		<flag name="output-zmqserver">Plugin which provides zmqserver processing</flag>
+		<flag name="http-management">Enable experimental HTTP management option</flag>
+		<flag name="www">Installs WWW content</flag>
+		<flag name="wxp-compat">Enable camera WXP compatible format</flag>
+	</use>
+	<upstream>
+		<bugs-to>https://github.com/jacksonliam/mjpg-streamer/issues</bugs-to>
+		<remote-id type="github">mjpg-streamer-experimental</remote-id>
+	</upstream>
+</pkgmetadata>

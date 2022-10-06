@@ -8,7 +8,8 @@ This repo provides necessary ebuilds to set up the 3D printer firmware with [Kli
 
 ## List of ebuilds
   - app-misc/klipper
-  - app-misc/moonraker 
+  - app-misc/moonraker
+  - media-video/mjpg-streamer  
   - www-apps/fluidd
 
 Feel free to contribute!
