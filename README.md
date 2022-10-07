@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/expeditioneer/klipper-overlay/actions/workflows/pkgcheck.yml/badge.svg)](https://github.com/expeditioneer/klipper-overlay/actions/workflows/pkgcheck.yml)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/expeditioneer/klipper-overlay/graphs/commit-activity)
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 This repo provides necessary ebuilds to set up the 3D printer firmware with [Klipper](https://www.klipper3d.org/), [Moonraker](https://github.com/Arksine/moonraker) and [Fluidd](https://github.com/cadriel/fluidd).
 
@@ -33,7 +33,7 @@ If you find a bug in an ebuild, encounter a build error or would like me to add 
 
 I gladly accept pull requests for bugs or new ebuilds. Before opening a pull request, please make sure your changes don't upset [`pkgcheck`](https://github.com/pkgcore/pkgcheck). Run the following command and fix warnings and errors:
 ```shell
-	pkgcheck scan
+pkgcheck scan
 ```
 ## Acknowledgements
 
